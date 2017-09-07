@@ -1,0 +1,31 @@
+{
+  "name": "hexo-theme-void",
+  "version": "1.0.0",
+  "description": "A hexo Extremely simple black and white theme",
+  "main": "index.js",
+  "scripts": {
+    "style": "gulp sass",
+    "style:watch": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hehehai/hexo-theme-void"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "void"
+  ],
+  "author": "River Hohai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hehehai/hexo-theme-void/issues"
+  },
+  "homepage": "https://github.com/hehehai/hexo-theme-void#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

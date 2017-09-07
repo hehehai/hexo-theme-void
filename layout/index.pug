@@ -1,0 +1,15 @@
+extends partial/layout.pug
+
+block container
+    include mixins/post.pug
+    +posts()
+
+block pagination
+    include mixins/paginator.pug
+    +home()
+
+block social
+    include partial/social.pug
+
+block copyright
+    include partial/copyright.pug

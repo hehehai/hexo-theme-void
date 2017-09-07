@@ -1,0 +1,15 @@
+.paginator {
+  margin: 4em 0;
+  .prev,
+  .next {
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: bold;
+    color: $dark;
+  }
+}
+
+.ds-thread,
+#disqus_thread {
+  margin-bottom: 2em;
+}

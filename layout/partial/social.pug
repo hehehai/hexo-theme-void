@@ -1,0 +1,5 @@
+ul.nav.nav-list
+    each value, key in theme.social
+        li.nav-list-item
+            a.nav-list-link(href=url_for(value) target='_blank')
+                != key

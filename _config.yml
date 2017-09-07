@@ -1,0 +1,25 @@
+menu:
+    Home: /
+    Archive: /archives/
+    Project: /project/
+    About: /about/
+    Rss: /atom.xml
+
+social:
+    Twitter: https://twitter.com/riverhohai
+    GitHub: https://github.com/hehehai
+    CodePen: https://codepen.io/hehehai/
+
+favicon: /logo-dark.png
+logo: /logo-white.png
+
+# Comment
+# e.g disqus: seansun
+disqus:
+
+# Analytics
+# google-analytics:
+ga: UA-65933410-1
+
+# Copyright Infomation
+startyear: 2016
