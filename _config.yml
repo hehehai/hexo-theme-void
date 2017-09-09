@@ -15,14 +15,15 @@ logo: /logo-white.png
 
 # Comment
 # e.g disqus: seansun
-disqus:
+disqus: false
 
 # Analytics
-# google-analytics:
-ga: UA-65933410-1
+# e.g ga: id
+ga: false
 
 # Mathjax CDN
-mathjax: true
+# e.g mathjax: true
+mathjax: false
 
 # Copyright Infomation
-startyear: 2016
+startyear: 2017
