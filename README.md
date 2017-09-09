@@ -1,23 +1,25 @@
 Demo: [Void](http://hehehai.cn/)
 
 ## 安装
-``` bash
-hexo init Blog
-cd Blog
-npm install
-
-npm install --save hexo-renderer-pug hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
-git clone https://github.com/hehehai/hexo-theme-void.git themes/void
-```
 
 这里的安装建议使用 `npm` 或 `cnpm`，不建议使用 `yarn`（ hexo 初始化使用的npm，使用 yarn cache 可能会冲突）
 
-- `hexo-renderer-pug` pug文件渲染
+- `hexo-render-pug` pug文件渲染
 - `hexo-generator-feed` 设置文章摘要，具体设置可参看插件
 - `hexo-generator-sitemap` 网站地图 RSS
 - `hexo-generator-archive` 归档页面文章显示
 - `hexo-browsersync` 可选择安装，在 hexo server 下自动启用
 
+因为hexo的有的插件很久没有更新了，在安装的时候会出现 `npm WARN deprecated`,只要不是错误就没事。
+
+``` bash
+hexo init Blog
+cd Blog
+npm install
+
+npm install --save hexo-render-pug hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
+git clone https://github.com/hehehai/hexo-theme-void.git themes/void
+```
 ## 启用
 
 修改 `_config.yml` 的 `theme` 配置项为 `void`:
@@ -43,6 +45,26 @@ archive_generator:
 
 这种方法的好处是，你可以保存你整个项目的文件包括配置。并且 Netlify 也有免费的 https 可以使用
 
+若使用 Netlify 建议把 项目的 `package.json` 中的依赖中不需要的删除
+``` json
+"dependencies": {
+    "hexo": "^3.2.0",
+    "hexo-browsersync": "^0.2.0", // 仅在 hexo s 会使用，可选则删除
+    "hexo-generator-archive": "^0.1.4",
+    "hexo-generator-category": "^0.1.3",
+    "hexo-generator-feed": "^1.2.2",
+    "hexo-generator-index": "^0.2.0",
+    "hexo-generator-sitemap": "^1.2.0",
+    "hexo-generator-tag": "^0.2.0",
+    "hexo-render-pug": "^1.2.0",
+    "hexo-renderer-ejs": "^0.3.0", // ejs引擎不需要
+    "hexo-renderer-marked": "^0.3.0",
+    "hexo-renderer-stylus": "^0.3.1", // stylus预编译不需要
+    "hexo-server": "^0.2.0"
+  }
+```
+
+
 ## 修改
 主题本身的配置可以直接在 `void` 文件夹下的 `_config.yml` 修改。若要修改 `Pug` 文件，不需要安装其他库，克直接修改 `layout`文件夹下的文件。
 
@@ -52,6 +74,16 @@ yarn
 yarn style:watch
 ```
 这里若出现错误，一般是因为 `node-sass` 的问题，可以删除 `node_modules` 文件夹后，使用 `cnpm install` 安装
+
+## 主题配置
+- `menu`: 头部导航
+- `social`: 社交导航
+- `favicon`: 网站图标
+- `logo`: 网站logo
+- `disqus`: disqus 评论，使用时设置 disqus id 即可（默认不启用）
+- `ga`: # Google Analytics，使用时设置 Analytics id  即可（默认不启用）
+- `mathjax`: Mathjax 公式，仅是一个以CDN方式引用的js连接（默认不启用）
+- `startyear`: 网站开始时间（年）
 
 ## 文件
 **PUG**
