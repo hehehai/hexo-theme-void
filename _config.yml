@@ -21,5 +21,8 @@ disqus:
 # google-analytics:
 ga: UA-65933410-1
 
+# Mathjax CDN
+mathjax: true
+
 # Copyright Infomation
 startyear: 2016

@@ -1,9 +1,11 @@
 extends partial/layout.pug
 
+//- Main
 block container
     include mixins/post.pug
     +postList()
 
+//- Footer
 block pagination
     include mixins/paginator.pug
     +home()

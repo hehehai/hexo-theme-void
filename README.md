@@ -1,21 +1,22 @@
-Demo: [Void](https://hehehai.cn/)
+Demo: [Void](http://hehehai.cn/)
 
 ## 安装
 ``` bash
 hexo init Blog
 cd Blog
 npm install
+
 npm install --save hexo-renderer-pug hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
 git clone https://github.com/hehehai/hexo-theme-void.git themes/void
 ```
 
-这里的安装建议使用 npm 或 cnpm，不建议使用 yarn（ hexo 初始化使用的npm，使用 yarn cache 可能会冲突）
+这里的安装建议使用 `npm` 或 `cnpm`，不建议使用 `yarn`（ hexo 初始化使用的npm，使用 yarn cache 可能会冲突）
 
-- hexo-renderer-pug pug文件渲染
-- hexo-generator-feed 设置文章摘要，具体设置可参看插件
-- hexo-generator-sitemap 网站地图 RSS
-- hexo-generator-archive 归档页面文章显示
-- hexo-browsersync 可选择安装，在 hexo server 下自动启用
+- `hexo-renderer-pug` pug文件渲染
+- `hexo-generator-feed` 设置文章摘要，具体设置可参看插件
+- `hexo-generator-sitemap` 网站地图 RSS
+- `hexo-generator-archive` 归档页面文章显示
+- `hexo-browsersync` 可选择安装，在 hexo server 下自动启用
 
 ## 启用
 
@@ -50,35 +51,36 @@ archive_generator:
 yarn
 yarn style:watch
 ```
-这里若出现错误，一般是因为node-sass的问题，可以删除`node_modules`文件夹后，使用`cnpm install`安装
+这里若出现错误，一般是因为 `node-sass` 的问题，可以删除 `node_modules` 文件夹后，使用 `cnpm install` 安装
 
 ## 文件
-PUG
+**PUG**
 ```
 layout/
-    │  archive.pug         # 文章归档  
-    │  index.pug           # 首页
-    │  post.pug            # 文章页
-    │                     
-    ├─mixins              
-    │      paginator.pug   # 分页 prev，next
-    │      post.pug        # 文章 postInfo（翻译标签） posts（首页文章列表）postList（归档页列表）post（文章）
-    │                     
-    └─partial             
-            comment.pug    # 评论系统 （disqus）
-            copyright.pug  # 版权
-            head.pug       # 页面头部信息
-            layout.pug     # 模板
-            nav.pug        # 头部导航
-            scripts.pug    # 脚本 （Mathjax CDN）（Google Analytics）
-            social.pug     # 社交导航
+    archive.pug        # 文章归档  
+    index.pug          # 首页
+    post.pug           # 文章页
+
+    mixins/
+        paginator.pug  # 分页 prev，next
+        post.pug       # 文章 postInfo（翻译标签） posts（首页文章列表）postList（归档页列表）post（文章）
+              
+    partial/             
+        comment.pug    # 评论系统 （disqus）
+        copyright.pug  # 版权
+        head.pug       # 页面头部信息
+        layout.pug     # 模板
+        nav.pug        # 头部导航
+        scripts.pug    # 脚本 （Mathjax CDN）（Google Analytics）
+        social.pug     # 社交导航
 ```
-SCSS
+
+**SCSS**
 ```
 source/scss
-│  main.scss               # 主入口，文件导入，字体导入         
-│                    
-└─_partial           
+    main.scss              # 主入口，文件导入，字体导入
+
+    partial/
         archive-post-list  # 归档页样式
         base.scss          # 基本样式
         copyright.scs      # 版权
@@ -96,5 +98,4 @@ source/scss
 - [hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo)
 
 ## License
-
 MIT
