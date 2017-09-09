@@ -1,4 +1,4 @@
-Demo: [Void](http://hehehai.cn/)
+**Demo**: [Void](http://hehehai.cn/)
 
 ## 安装
 
@@ -37,45 +37,27 @@ archive_generator:
 ```
 
 ## 部署
-可以参考我的项目 [Blog](https://github.com/hehehai/blog)
-该项目使用 Netlify 部署，具体使用方法参考官方文档
+### Netlify
+可以参考我的 [Blog](https://github.com/hehehai/blog)，该项目使用 [Netlify](https://netlify.com) 部署，具体使用方法参考官方文档。
 
-你可以fork项目，之后使用 Netlify 关联项目，绑定自己的域名。
-之后可以直接在 github fork 的当前项目 `source/_post` 下新增 md 文档，保存后 Netlify 或自动更新。也可以 clone 到本地，更新文档后 push 到仓库
+你可以fork项目，之后使用 Netlify 关联项目，绑定自己的域名。之后可以直接在 github fork 的当前项目 `source/_post` 下新增 md 文档，保存后 Netlify 或自动更新。也可以 clone 到本地，更新文档后 push 到仓库
 
-这种方法的好处是，你可以保存你整个项目的文件包括配置。并且 Netlify 也有免费的 https 可以使用
+这种方法的好处是，你可以保存你整个项目的文件包括配置。并且 Netlify 也有免费的 https 可以使用。
 
-若使用 Netlify 建议把 项目的 `package.json` 中的依赖中不需要的删除
-``` json
-"dependencies": {
-    "hexo": "^3.2.0",
-    "hexo-browsersync": "^0.2.0", // 仅在 hexo s 会使用，可选则删除
-    "hexo-generator-archive": "^0.1.4",
-    "hexo-generator-category": "^0.1.3",
-    "hexo-generator-feed": "^1.2.2",
-    "hexo-generator-index": "^0.2.0",
-    "hexo-generator-sitemap": "^1.2.0",
-    "hexo-generator-tag": "^0.2.0",
-    "hexo-render-pug": "^1.2.0",
-    "hexo-renderer-ejs": "^0.3.0", // ejs引擎不需要
-    "hexo-renderer-marked": "^0.3.0",
-    "hexo-renderer-stylus": "^0.3.1", // stylus预编译不需要
-    "hexo-server": "^0.2.0"
-  }
-```
+若使用 Netlify 建议把 项目的 `package.json` 中的依赖中不需要的删除。
+- "hexo-browsersync": 仅在 hexo s 会使用，可选择删除
+- "hexo-renderer-ejs": ejs引擎不需要
+- "hexo-renderer-stylus": stylus预编译不需要
 
+### 静态部署
+可以选择将打包好的静态文件部署到 "github Pages"、"Coding Pages"或其他地方
+- [github pages](http://www.jianshu.com/p/834d7cc0668d)
+- [github pages](https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/)
+- [github pages and coding pages](http://shomy.top/2016/03/03/hexo-in-coding-github/)
 
 ## 修改
-主题本身的配置可以直接在 `void` 文件夹下的 `_config.yml` 修改。若要修改 `Pug` 文件，不需要安装其他库，克直接修改 `layout`文件夹下的文件。
-
-修改样式需要安装依赖, 在 `void` 文件夹下
-``` bash
-yarn
-yarn style:watch
-```
-这里若出现错误，一般是因为 `node-sass` 的问题，可以删除 `node_modules` 文件夹后，使用 `cnpm install` 安装
-
-## 主题配置
+### 主题配置
+主题本身的配置可以直接在 `void` 文件夹下的 `_config.yml` 修改。
 - `menu`: 头部导航
 - `social`: 社交导航
 - `favicon`: 网站图标
@@ -85,7 +67,9 @@ yarn style:watch
 - `mathjax`: Mathjax 公式，仅是一个以CDN方式引用的js连接（默认不启用）
 - `startyear`: 网站开始时间（年）
 
-## 文件
+### 文件
+若要修改 `Pug` 文件，不需要安装其他库，克直接修改 `layout`文件夹下的文件。
+
 **PUG**
 ```
 layout/
@@ -107,6 +91,13 @@ layout/
         social.pug     # 社交导航
 ```
 
+修改样式需要安装依赖, 在 `void` 文件夹下运行`npm install`。
+``` bash
+npm install
+npm run style:watch
+```
+这里若出现错误，一般是因为 `node-sass` 的问题，可以删除 `node_modules` 文件夹后，使用 `cnpm install` 安装。
+
 **SCSS**
 ```
 source/scss
@@ -125,8 +116,48 @@ source/scss
         utils.scss         # 变量，颜色，字体
 ```
 
+## 主题文档
+这里主题的文档，因为我几乎没有修改 [Apollo](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc%2Fdoc-zh.md) 主题的`jade/pug`文件，所以使用技巧相同。
+### Meta Description
+如果你想设置页面的 meta description 信息，请在每篇 markdown 文件的头部添加 desc 字段信息——更实用的方式是在 scaffolds 文件夹中，将 desc 配置到常用模板中去，示例如下：
+```
+title: Lorem ipsum dolor
+date: 2015-12-31 14:49:13
+desc: Lorem ipsum dolor sit amet, consectetur.
+---
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, non numquam saepe ex ut. Deleniti culpa inventore consectetur nam saepe!
+```
+生成结果:
+``` html
+<meta name="description" content="Lorem ipsum dolor sit amet, consectetur.">
+```
+如果没有配置该信息，`void` 会使用 `page.title` 和`page.author` 来配置该标签。
+
+### 文章摘要
+如果你想创建文章摘要用于向读者展示文章的核心内容，那么需要在文章摘要之后其他内容之前添加 HTML 注释标签 `<!--more-->`
+``` md
+title: Lorem ipsum dolor
+date: 2015-12-31 14:49:13
+desc: Lorem ipsum dolor sit amet, consectetur.
+---
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, non numquam saepe ex ut. Deleniti culpa inventore consectetur nam saepe!
+<！-- more -->
+text...
+```
+
+### 警告块
+使用警告块需要 div 标签和 tip 类名：
+``` html
+<div class="tip">
+    预处理器很强大，但它只是编写 CSS 的辅助工具。出于对扩展和维护等方面的考虑，在大型项目中有必要使用预处理器构建 CSS；但是对于小型项目，原生的 CSS 可能是一种更好的选择。不要肆意使用预处理器！
+</div>
+```
+![apollo-tip](https://cloud.githubusercontent.com/assets/9530963/11359678/489a510c-92b9-11e5-9256-341cef6999b6.png)
+这里我直接使用 `hexo-theme-apollo` 的图片了，地址[Apollo](https://github.com/pinggod/hexo-theme-apollo)
+
 ## 参考
-项目在 hexo 主题 apollo 基础上修改生成
+项目在 hexo 主题 apollo 基础上修改生成。
 - [hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo)
 
 ## License
