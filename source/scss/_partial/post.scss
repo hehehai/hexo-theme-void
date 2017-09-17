@@ -5,7 +5,7 @@
 
 .post-block {
   .post-title {
-    margin: 1.5em 0 0;
+    margin-top: 1.5em;
     color: $dark;
     font-size: 1.6em;
   }
@@ -14,9 +14,11 @@
     color: #3f4040;
     margin: 0.5em 0 1.8em;
     font-size: 1.3rem;
+
     span {
       margin-left: 0.5rem;
     }
+
     a.post-from {
       margin-left: 0.5rem;
       padding: 3px 6px;
@@ -105,6 +107,7 @@
   padding: 1em 0;
   background-color: rgba($black, 0.5);
   z-index: 10;
+
   #mask-image {
     max-width: 95%;
   }
@@ -123,6 +126,7 @@ pre {
   line-height: 1.3em;
   background-color: #f8f8f8;
   overflow-x: auto;
+
   table,
   tr,
   td {
@@ -131,9 +135,11 @@ pre {
     padding: 0;
     margin: 0;
   }
+
   .gutter {
     display: none;
   }
+  
   .code pre {
     padding: 1.2em 1.4em;
     line-height: 1.6em;

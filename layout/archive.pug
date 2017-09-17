@@ -2,16 +2,16 @@ extends partial/layout.pug
 
 //- Main
 block container
-    include mixins/post.pug
-    +postList()
+  include mixins/post.pug
+  +postList()
 
 //- Footer
 block pagination
-    include mixins/paginator.pug
-    +home()
+  include mixins/paginator.pug
+  +home()
 
 block social
-    include partial/social.pug
+  include partial/social.pug
 
 block copyright
-    include partial/copyright.pug
+  include partial/copyright.pug

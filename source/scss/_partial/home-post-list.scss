@@ -1,11 +1,14 @@
 .home.post-list {
   margin: 2em 0;
+
   .post-list-item {
     padding: 1em 0 3em;
+
     &:last-child {
       border-bottom: 0px;
     }
   }
+
   .post-content {
     h2,
     h3,
@@ -16,6 +19,7 @@
         content: '';
       }
     }
+    
     & > ul {
       list-style: initial;
     }

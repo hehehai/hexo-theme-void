@@ -10,7 +10,7 @@
 - `hexo-generator-archive` 归档页面文章显示
 - `hexo-browsersync` 可选择安装，在 hexo server 下自动启用
 
-因为hexo的有的插件很久没有更新了，在安装的时候会出现 `npm WARN deprecated`,只要不是错误就没事。
+因为 `hexo` 的有的插件很久没有更新了，在安装的时候会出现 `npm WARN deprecated`,只要不是错误就没事。
 
 ``` bash
 hexo init Blog
@@ -40,7 +40,7 @@ archive_generator:
 ### Netlify
 可以参考我的 [Blog](https://github.com/hehehai/blog)，该项目使用 [Netlify](https://netlify.com) 部署，具体使用方法参考官方文档。
 
-你可以fork项目，之后使用 Netlify 关联项目，绑定自己的域名。之后可以直接在 github fork 的当前项目 `source/_post` 下新增 md 文档，保存后 Netlify 或自动更新。也可以 clone 到本地，更新文档后 push 到仓库
+你可以fork项目，之后使用 Netlify 关联项目，绑定自己的域名。之后可以直接在 github fork 的当前项目 `source/_post` 下新增 `.md`文档，保存后 Netlify 或自动更新。也可以 clone 到本地，更新文档后 push 到仓库
 
 这种方法的好处是，你可以保存你整个项目的文件包括配置。并且 Netlify 也有免费的 https 可以使用。
 

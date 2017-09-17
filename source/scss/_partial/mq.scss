@@ -11,6 +11,7 @@ main.container {
   body {
     font-size: 1.4rem;
   }
+
   .nav {
     .nav-list-item {
       margin-right: 15px;
@@ -24,6 +25,7 @@ main.container {
   .archive .post-item {
     padding-left: 0;
   }
+
   .post-content {
     h2,
     h3,
@@ -34,6 +36,7 @@ main.container {
       left: 15px;
     }
   }
+  
   .ds-thread,
   #disqus_thread {
     margin: 2em 10px;

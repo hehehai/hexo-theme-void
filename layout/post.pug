@@ -2,25 +2,25 @@ extends partial/layout.pug
 
 //- head
 block site_title
-    != page.title + " · " + config.title
+  != page.title + " · " + config.title
 
 block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+  - var desc = page.desc || page.title + ' - ' + config.author;
+  meta(name="description", content=desc)
 
 //- Main
 block container
-    include mixins/post.pug
-    +post(page)
+  include mixins/post.pug
+  +post(page)
 
 //- Footer
 block pagination
-    include mixins/paginator.pug
-    +post()
-    include partial/comment.pug
+  include mixins/paginator.pug
+  +post()
+  include partial/comment.pug
 
 block social
-    include partial/social.pug
+  include partial/social.pug
 
 block copyright
-    include partial/copyright.pug
+  include partial/copyright.pug

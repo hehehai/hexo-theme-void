@@ -61,17 +61,21 @@ video {
 table {
   width: 100%;
   margin: 2em auto;
+
   thead {
     background-color: #ECECEC;
+
     th {
       padding: 5px;
       min-width: 20px;
     }
   }
+
   tbody {
     tr:nth-child(2n) {
       background-color: #F8F8F8;
     }
+    
     td {
       padding: 5px;
       vertical-align: text-top;

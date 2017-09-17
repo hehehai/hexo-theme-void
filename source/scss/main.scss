@@ -4,14 +4,16 @@
 
 @import '_partial/normalize';
 @import '_partial/base';
+
 @import '_partial/header';
 @import '_partial/home-post-list';
 @import '_partial/archive-post-list';
 @import '_partial/post';
 @import '_partial/footer';
-@import '_partial/mq';
 @import '_partial/copyright';
+@import '_partial/mq';
 
+// default font
 @font-face {
   font-family: 'Roboto';
   src: url('../font/Roboto.woff2') format('woff2'),
@@ -20,6 +22,7 @@
   font-style: normal;
 }
 
+// code font
 @font-face {
   font-family: 'RobotoMono';
   src: url('../font/RobotoMono.woff2') format('woff2'),

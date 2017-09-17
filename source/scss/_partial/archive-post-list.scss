@@ -1,19 +1,23 @@
 .archive {
   max-width: 500px;
   margin: 5em 0;
+
   .post-item {
     padding: 2px 0 0 50px;
   }
+
   .post-time,
   .post-title-link {
     font-size: 1.5rem;
   }
+
   .post-title-link {
     display: block;
     color: $dark;
     word-break: break-all;
     font-weight: bold;
   }
+  
   .post-info {
     float: left;
     width: 125px;

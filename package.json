@@ -3,10 +3,6 @@
   "version": "1.0.1",
   "description": "A hexo Extremely simple black and white theme",
   "main": "index.js",
-  "scripts": {
-    "style": "gulp sass",
-    "style:watch": "gulp"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/hehehai/hexo-theme-void"
@@ -17,11 +13,15 @@
     "void"
   ],
   "author": "River Hohai",
-  "license": "MIT",
+  "homepage": "https://github.com/hehehai/hexo-theme-void#readme",
   "bugs": {
     "url": "https://github.com/hehehai/hexo-theme-void/issues"
   },
-  "homepage": "https://github.com/hehehai/hexo-theme-void#readme",
+  "scripts": {
+    "style": "gulp sass",
+    "style:watch": "gulp"
+  },
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
