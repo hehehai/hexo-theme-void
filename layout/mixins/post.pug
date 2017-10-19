@@ -1,3 +1,4 @@
+//- Post info (data, from link)
 mixin postInfo(item)
   .post-info
     != full_date(item.date, 'll')
@@ -13,7 +14,7 @@ mixin posts()
           h2.post-title
             a.post-title-link(href= url_for(item.path))
               != item.title
-          //- +postInfo(item)
+          +postInfo(item)
           .post-content
             != item.excerpt
           a.read-more(href= url_for(item.path))!= __('more')
@@ -28,7 +29,7 @@ mixin postList()
       - var itemYear = date(item.date, 'YYYY') - 0;
       - change = year !== itemYear;
       - year = change ? itemYear : year;
-      if change 
+      if change
         h2.archive-year!= year
       .post-item
         +postInfo(item)

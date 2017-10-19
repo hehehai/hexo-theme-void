@@ -19,7 +19,9 @@
       margin-left: 0.5rem;
     }
 
-    a.post-from {
+    a.post-from,
+    a.tag,
+    span.tag {
       margin-left: 0.5rem;
       padding: 3px 6px;
       font-size: 1.2rem;
@@ -30,6 +32,8 @@
 }
 
 .post-content {
+  margin-bottom: 1rem;
+
   h2,
   h3,
   h4,
@@ -80,7 +84,7 @@
       display: none;
     }
   }
-  
+
   .tip:before {
     position: absolute;
     top: 14px;
@@ -139,7 +143,7 @@ pre {
   .gutter {
     display: none;
   }
-  
+
   .code pre {
     padding: 1.2em 1.4em;
     line-height: 1.6em;

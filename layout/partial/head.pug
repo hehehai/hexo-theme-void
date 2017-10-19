@@ -1,7 +1,7 @@
 meta(charset="utf-8")
 meta(name="X-UA-Compatible", content="IE=edge")
 
-title 
+title
   block site_title
     = config.title
 
@@ -12,6 +12,10 @@ meta(name="viewport", content="width=device-width, initial-scale=1")
 link(rel="icon", href=url_for(theme.favicon))
 link(rel="stylesheet", href=url_for("css/main.css"))
 
+//- gitalk commit base style
+if theme.gitalk.apply
+  link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.1.4/dist/gitalk.min.css")
+
 - var xml = config.url + '/atom.xml'
   link(rel="search", type="application/opensearchdescription+xml", href=xml, title=config.title)
-    
+

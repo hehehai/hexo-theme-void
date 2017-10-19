@@ -1,7 +1,13 @@
-.DS_Store
-Thumbs.db
-db.json
+# Exclude compiled files
+
+# OS files
+.DS_STORE
+
+# npm files
+node_modules
+package-lock.json
 *.log
-node_modules/
-.deploy*/
-yarn.lock
+
+# Editor files
+.idea
+.vscode

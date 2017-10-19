@@ -1,3 +1,7 @@
+# Theme Configuration
+# Source: https://github.com/hehehai/hexo-theme-void
+
+# header nav
 menu:
     Home: /
     Archive: /archives/
@@ -5,6 +9,7 @@ menu:
     About: /about/
     Rss: /atom.xml
 
+# footer nav
 social:
     Twitter: https://twitter.com/riverhohai
     GitHub: https://github.com/hehehai
@@ -16,6 +21,17 @@ logo: /logo.png
 # Comment
 # e.g disqus: seansun
 disqus: false
+
+# e.g
+# gitalk:
+  # apply: true
+  # clientID: clientID
+  # clientSecret: clientSecret
+  # repo: repo
+  # owner: owner
+  # admin: admin
+gitalk:
+  apply: false
 
 # Analytics
 # e.g ga: id

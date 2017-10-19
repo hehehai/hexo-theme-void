@@ -11,3 +11,16 @@ if theme.disqus
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
   script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
+
+if theme.gitalk.apply
+  #gitalk_container
+  script(src="https://cdn.jsdelivr.net/npm/gitalk@1.1.4/dist/gitalk.min.js")
+  script.
+    var gitalk = new Gitalk({
+      clientID: '#{theme.gitalk.clientID}',
+      clientSecret: '#{theme.gitalk.clientSecret}',
+      repo: '#{theme.gitalk.repo}',
+      owner: '#{theme.gitalk.owner}',
+      admin: ['#{theme.gitalk.admin}']
+    });
+    gitalk.render('gitalk_container');

@@ -62,7 +62,8 @@ archive_generator:
 - `social`: 社交导航
 - `favicon`: 网站图标
 - `logo`: 网站logo
-- `disqus`: disqus 评论，使用时设置 disqus id 即可（默认不启用）
+- `disqus`: Disqus 评论，使用时设置 disqus id 即可（默认不启用）
+- `gitalk`: Gitalk 评论，设置参考 [Gitalk commit setup](http://hehehai.cn/2017/10/19/gitalk-commit/) （默认不启用）
 - `ga`: # Google Analytics，使用时设置 Analytics id  即可（默认不启用）
 - `mathjax`: Mathjax 公式，仅是一个以CDN方式引用的js连接（默认不启用）
 - `startyear`: 网站开始时间（年）
@@ -82,7 +83,7 @@ layout/
         post.pug       # 文章 postInfo（翻译标签） posts（首页文章列表）postList（归档页列表）post（文章）
               
     partial/             
-        comment.pug    # 评论系统 （disqus）
+        comment.pug    # 评论系统 （Disqus, Gitalk）
         copyright.pug  # 版权
         head.pug       # 页面头部信息
         layout.pug     # 模板
