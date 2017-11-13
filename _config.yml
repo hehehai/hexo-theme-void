@@ -5,8 +5,6 @@
 menu:
     Home: /
     Archive: /archives/
-    Project: /project/
-    About: /about/
     Rss: /atom.xml
 
 # footer nav

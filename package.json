@@ -1,18 +1,18 @@
 {
   "name": "hexo-theme-void",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A hexo Extremely simple black and white theme",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/hehehai/hexo-theme-void"
   },
-  "keywords": [
-    "hexo",
-    "theme",
-    "void"
-  ],
-  "author": "River Hohai",
+  "keywords": ["hexo", "hexo-theme", "hexo-theme-void", "blog", "static"],
+  "author": {
+    "name": "Guan Wei",
+    "email": "riverhohai@gmail.com",
+    "url": "http://hehehai.cn"
+  },
   "homepage": "https://github.com/hehehai/hexo-theme-void#readme",
   "bugs": {
     "url": "https://github.com/hehehai/hexo-theme-void/issues"

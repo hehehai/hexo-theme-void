@@ -1,7 +1,7 @@
 var gulp         = require('gulp');
 var sass         = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
 var plumber      = require('gulp-plumber');
+var autoprefixer = require('gulp-autoprefixer');
 
 var onError = function(err) {
   console.log(err);
@@ -21,6 +21,5 @@ gulp.task('sass', function() {
 });
 
 gulp.task('default', ['sass'], function() {
-  gulp.watch('./source/scss/_partial/*.scss', ['sass']);
-  gulp.watch('./source/scss/*.scss', ['sass']);
+  gulp.watch('./source/scss/**/*.scss', ['sass']);
 });

@@ -1,3 +1,6 @@
+# hexo theme void
+> A concise theme of black and white tones
+
 **Demo**: [Void](http://hehehai.cn/)
 
 ## 安装
@@ -51,9 +54,9 @@ archive_generator:
 
 ### 静态部署
 可以选择将打包好的静态文件部署到 "github Pages"、"Coding Pages"或其他地方
-- [github pages](http://www.jianshu.com/p/834d7cc0668d)
-- [github pages](https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/)
-- [github pages and coding pages](http://shomy.top/2016/03/03/hexo-in-coding-github/)
+- [Github Pages](http://www.jianshu.com/p/834d7cc0668d)
+- [Github Pages](https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/)
+- [Github Pages and Coding Pages](http://shomy.top/2016/03/03/hexo-in-coding-github/)
 
 ## 修改
 ### 主题配置
@@ -81,7 +84,7 @@ layout/
     mixins/
         paginator.pug  # 分页 prev，next
         post.pug       # 文章 postInfo（翻译标签） posts（首页文章列表）postList（归档页列表）post（文章）
-              
+
     partial/             
         comment.pug    # 评论系统 （Disqus, Gitalk）
         copyright.pug  # 版权
@@ -162,4 +165,4 @@ text...
 - [hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo)
 
 ## License
-MIT
+MIT [河河海](http://hehehai.cn)
