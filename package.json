@@ -18,8 +18,8 @@
     "url": "https://github.com/hehehai/hexo-theme-void/issues"
   },
   "scripts": {
-    "style": "gulp sass",
-    "style:watch": "gulp"
+    "css": "gulp sass",
+    "css:w": "gulp"
   },
   "license": "MIT",
   "devDependencies": {
