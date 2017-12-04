@@ -1,0 +1,5 @@
+* text=auto
+*.scss eol=lf
+*.pug eol=lf
+*.js eol=lf
+*.yml eol=lf
