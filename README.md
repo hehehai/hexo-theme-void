@@ -2,7 +2,7 @@
 
 <div align="center">
   <!-- void snapshoot -->
-  <img src="https://raw.githubusercontent.com/hehehai/hexo-theme-void/master/void-theme.png" alt="void theme"/>  ![snapshoot](./void-theme.png)
+  <img src="https://raw.githubusercontent.com/hehehai/hexo-theme-void/master/void-theme.png" alt="void theme"/>
   <!-- void Demo -->
   <a href="http://hehehai.cn">简洁的黑白色调主题</a>
 </div>
