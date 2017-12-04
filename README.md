@@ -1,10 +1,10 @@
-# hexo theme void
-> A concise theme of black and white tones
+<h1 align="center">Void</h1>
 
-
-<div style="align: center">
-  ![snapshoot](./void-theme.png)
-  [Void Theme](http://hehehai.cn/)
+<div align="center">
+  <!-- void snapshoot -->
+  <img src="https://raw.githubusercontent.com/hehehai/hexo-theme-void/master/void-theme.png" alt="void theme"/>  ![snapshoot](./void-theme.png)
+  <!-- void Demo -->
+  <a href="http://hehehai.cn">简洁的黑白色调主题</a>
 </div>
 
 ## 安装
@@ -58,7 +58,7 @@ archive_generator:
 - "hexo-renderer-stylus": `stylus` 预编译不需要
 
 ## 修改
-### 主题配置
+### 配置
 主题本身的配置可以直接在 `void` 文件夹下的 `_config.yml` 修改。
 - `menu`: 头部导航
 - `social`: 社交导航
@@ -119,7 +119,7 @@ source/scss
     utils.scss    # 变量，颜色，字体
 ```
 
-## 主题文档
+## 文档
 这里主题的文档，因为我几乎没有修改 [Apollo](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc%2Fdoc-zh.md) 主题的`jade/pug`文件，所以使用技巧相同。
 ### Meta Description
 如果你想设置页面的 meta description 信息，请在每篇 markdown 文件的头部添加 desc 字段信息——更实用的方式是在 scaffolds 文件夹中，将 desc 配置到常用模板中去，示例如下：
@@ -137,7 +137,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, non numquam sae
 ```
 如果没有配置该信息，`void` 会使用 `page.title` 和`page.author` 来配置该标签。
 
-### 文章摘要
+### 摘要
 如果你想创建文章摘要用于向读者展示文章的核心内容，那么需要在文章摘要之后其他内容之前添加 HTML 注释标签 `<!--more-->`
 ``` md
 title: Lorem ipsum dolor
@@ -149,7 +149,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, non numquam sae
 text...
 ```
 
-### 警告块
+### Tip
 使用警告块需要 div 标签和 tip 类名：
 ``` html
 <div class="tip">
