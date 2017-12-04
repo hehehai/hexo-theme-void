@@ -9,7 +9,7 @@ var onError = function(err) {
 
 gulp.task('sass', function() {
   return gulp
-    .src('./source/scss/*.scss')
+    .src('./source/_scss/*.scss')
     .pipe(
       plumber({
         errorHandler: onError,
@@ -21,5 +21,5 @@ gulp.task('sass', function() {
 });
 
 gulp.task('default', ['sass'], function() {
-  gulp.watch('./source/scss/**/*.scss', ['sass']);
+  gulp.watch('./source/_scss/**/*.scss', ['sass']);
 });

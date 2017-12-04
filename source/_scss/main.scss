@@ -1,17 +1,17 @@
 @charset "utf-8";
 
-@import '_partial/utils';
+@import 'partial/utils';
 
-@import '_partial/normalize';
-@import '_partial/base';
+@import 'partial/normalize';
+@import 'partial/base';
 
-@import '_partial/header';
-@import '_partial/home-post-list';
-@import '_partial/archive-post-list';
-@import '_partial/post';
-@import '_partial/footer';
-@import '_partial/copyright';
-@import '_partial/mq';
+@import 'partial/header';
+@import 'partial/home-post-list';
+@import 'partial/archive-post-list';
+@import 'partial/post';
+@import 'partial/footer';
+@import 'partial/copyright';
+@import 'partial/mq';
 
 /*
  * this use google fonts CDN

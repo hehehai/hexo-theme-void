@@ -120,9 +120,9 @@ source/scss
 ```
 
 ## 文档
-这里主题的文档，因为我几乎没有修改 [Apollo](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc%2Fdoc-zh.md) 主题的`jade/pug`文件，所以使用技巧相同。
 ### Meta Description
-如果你想设置页面的 meta description 信息，请在每篇 markdown 文件的头部添加 desc 字段信息——更实用的方式是在 scaffolds 文件夹中，将 desc 配置到常用模板中去，示例如下：
+如果你想设置页面的 `meta description` 信息，请在每篇 markdown 文件的头部添加 desc 字段信息——更实用的方式是在 `scaffolds` 文件夹中，将 `desc` 配置到常用模板中去，示例如下:
+
 ```
 title: Lorem ipsum dolor
 date: 2015-12-31 14:49:13
@@ -131,10 +131,12 @@ desc: Lorem ipsum dolor sit amet, consectetur.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, non numquam saepe ex ut. Deleniti culpa inventore consectetur nam saepe!
 ```
+
 生成结果:
 ``` html
 <meta name="description" content="Lorem ipsum dolor sit amet, consectetur.">
 ```
+
 如果没有配置该信息，`void` 会使用 `page.title` 和`page.author` 来配置该标签。
 
 ### 摘要
@@ -150,17 +152,24 @@ text...
 ```
 
 ### Tip
-使用警告块需要 div 标签和 tip 类名：
+使用警告块需要 `div` 标签和 `tip` 类名：
 ``` html
 <div class="tip">
   预处理器很强大，但它只是编写 CSS 的辅助工具。出于对扩展和维护等方面的考虑，在大型项目中有必要使用预处理器构建 CSS；但是对于小型项目，原生的 CSS 可能是一种更好的选择。不要肆意使用预处理器！
 </div>
 ```
-![apollo-tip](https://cloud.githubusercontent.com/assets/9530963/11359678/489a510c-92b9-11e5-9256-341cef6999b6.png)
-这里我直接使用 `hexo-theme-apollo` 的图片了，地址[Apollo](https://github.com/pinggod/hexo-theme-apollo)
+<div align="center">
+  <!-- tip img -->
+  <img src="https://cloud.githubusercontent.com/assets/9530963/11359678/489a510c-92b9-11e5-9256-341cef6999b6.png" alt="theme tip"/>
+
+  <!-- link -->
+  <span>
+  图片来源: 
+  <a href="https://github.com/pinggod/hexo-theme-apollo">apollo</a>
+  </span>
+</div>
 
 ## 参考
-项目在 hexo 主题 apollo 基础上修改生成。
 - [hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo)
 
 ## License
